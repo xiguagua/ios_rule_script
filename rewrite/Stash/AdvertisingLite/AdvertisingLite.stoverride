@@ -1,11 +1,11 @@
 name: 复写去广告(严格版)
-desc: 最后更新时间 2025-01-10 02:17:11
+desc: 最后更新时间 2025-02-17 02:15:27
 # author: blackmatrix7
 # repo: https://github.com/blackmatrix7/ios_rule_script
-# reject: 1186
-# mitm: 875
+# reject: 1190
+# mitm: 879
 # force-http-engine-hosts: 6
-# total: 2067
+# total: 2075
 
 
 
@@ -85,6 +85,7 @@ http:
     - ^https:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/bdfb4 - reject
     - ^https:\/\/minipro\.95504\.net\/app\/json\/ad\/getPopAdData - reject
     - ^https:\/\/mobile-api\.imlaidian\.com\/api\/args - reject
+    - ^https:\/\/mobile-consumer-sapp\.chery\.cn\/web\/position\/getShowList\?displayPlatform=1&tabType=0& - reject
     - ^https:\/\/mobileapi\.ly\.com\/wlfrontend\/app\/scenicMain - reject
     - ^https:\/\/mobileapi\.xiamenair\.com\/mobile-starter - reject
     - ^https:\/\/mobilehotelapi\.elong\.com\/appHotel\/adx\/advert\/getAdvert - reject
@@ -630,6 +631,7 @@ http:
     - ^https?:\/\/gsp\.gacmotor\.com\/gateway\/webapi\/baseinfo\/advertise\/getAdvertiseByPositionCode\?positionCode=1 - reject
     - ^https?:\/\/gss0\.bdstatic\.com\/.+?\/static\/wiseindex\/img\/bd_red_packet\.png - reject
     - ^https?:\/\/guanyu\.longfor\.com\/app-server\/api\/v1\/main\/start - reject
+    - ^https?:\/\/gw-app-gateway\.gwmapp-w\.com\/app-api.*Type=APPSECONDAD - reject
     - ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs - reject
     - ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs - reject
     - ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passengerController\/notk\/passenger\/recommendADs - reject
@@ -867,6 +869,7 @@ http:
     - ^https?:\/\/newapp2\.szsmk\.com\/app\/config\/queryMainAd - reject
     - ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads - reject
     - ^https?:\/\/news\.ssp\.qq\.com\/app - reject
+    - ^https?:\/\/newsuperapp\.ftms\.com\.cn\/app-bff\/.*openScreenPicture - reject
     - ^https?:\/\/nex\.163\.com\/q - reject
     - ^https?:\/\/nnapp\.cloudbae\.cn(:\d+)?\/mc\/api\/advert - reject
     - ^https?:\/\/notch\.qdaily\.com\/api\/v\d\/boot_ad - reject
@@ -984,6 +987,7 @@ http:
     - ^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com - reject
     - ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/.*?\/v\d\/(version|top_notice\?|advert\?position=[^2]+) - reject
     - ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v\d\/version - reject
+    - ^https?:\/\/sdk\.tianmu\.mobi\/ad - reject
     - ^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(GetAD|ADLog) - reject
     - ^https?:\/\/service\.busi\.inke\.cn\/api\/flash\/screen - reject
     - ^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson - reject
@@ -1623,6 +1627,7 @@ http:
     - "gsp.gacmotor.com"
     - "gss0.bdstatic.com"
     - "guanyu.longfor.com"
+    - "gw-app-gateway.gwmapp-w.com"
     - "gw-passenger.01zhuanche.com"
     - "gw.aihuishou.com"
     - "gw.alicdn.com"
@@ -1787,6 +1792,7 @@ http:
     - "mobads-pre-config.cdn.bcebos.com"
     - "mobads.baidu.com"
     - "mobile-api.imlaidian.com"
+    - "mobile-consumer-sapp.chery.cn"
     - "mobile-pic.cache.iciba.com"
     - "mobile.1qianbao.com"
     - "mobile.api.mgtv.com"
@@ -1815,6 +1821,7 @@ http:
     - "newapp2.szsmk.com"
     - "newclient.map.baidu.com"
     - "news.ssp.qq.com"
+    - "newsuperapp.ftms.com.cn"
     - "nex.163.com"
     - "nnapp.cloudbae.cn"
     - "notch.qdaily.com"
@@ -1919,6 +1926,7 @@ http:
     - "saad.ms.zhangyue.net"
     - "scdn.line-apps.com"
     - "sdk.alibaba.com.ailbaba.me"
+    - "sdk.tianmu.mobi"
     - "sdk1xyajs.data.kuiniuca.com"
     - "se-api.djiits.com"
     - "service.4gtv.tv"
